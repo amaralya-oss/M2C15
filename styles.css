@@ -124,6 +124,60 @@ body {
     transform: scale(1.05);
 }
 
+/* Iconos de la sección */
+
+.RetiroDespacho .material-symbols-outlined {
+    color: #f09d98;     /* color inicial */
+    font-size: 3rem;
+    transition: color 0.3s ease; /* suaviza el hover */
+}
+
+/* Contenedor de tarjetas */
+.RetiroDespacho .row {
+    display: flex;
+    flex-wrap: wrap; /* permite que las tarjetas bajen en móviles */
+    gap: 2rem;       /* espacio entre tarjetas */
+}
+
+/* Tarjetas: estilo general */
+.RetiroDespacho .row > .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    flex: 1 1 100%; /* por defecto ocupan todo el ancho en móviles */
+    transition: all 0.3s ease; /* transición para hover */
+}
+
+/* Para pantallas grandes: tarjetas paralelas */
+@media (min-width: 768px) {
+    .RetiroDespacho .row > .col-md-6 {
+        flex: 1 1 calc(50% - 1rem); /* cada tarjeta ocupa la mitad con espacio */
+    }
+}
+
+/* Tarjetas: efecto hover */
+.RetiroDespacho .row > .col-md-6:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px); /* efecto sutil de elevación */
+}
+
+/* Cambiar color del icono al pasar el cursor por la tarjeta */
+.RetiroDespacho .row > .col-md-6:hover .material-symbols-outlined {
+    color: #A5231C; /* el color que quieras */
+    transition: color 0.3s ease;
+}
+
+.RetiroDespacho h5{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
 footer {
     background-color: #343a40;
     color: white;
