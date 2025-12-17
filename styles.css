@@ -1,10 +1,73 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
 }
 
+.top-bar {
+    background-color: #f5c2c7; /* rosado pastel, ajusta a tu marca */
+    color: #4a2c2a;            /* texto oscuro */
+    font-size: 0.875rem;       /* 14px */
+    padding: 0.5rem 1rem;
+}
+
 .navbar {
-    background-color: #d2691e !important; /* Color marrón para pastelería */
+    background-color: #A5231C !important; /* Color rojizo */
+    padding: 1rem 2rem; /* 1rem arriba/abajo, 2rem izquierda/derecha */
+    align-content: center;
+}
+
+.navbar-brand{
+    font-weight: 500;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    padding: 0.5rem 2rem; /* vertical 0.5rem, horizontal 2rem */
+    display: flex;           /* convierte el enlace en un contenedor flex */
+    align-items: center;     /* centra verticalmente el contenido */
+    gap: 0.3rem;             /* espacio entre icono y texto */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand {
+    padding: 0.5rem 1rem; /* igual que los enlaces para alineación */
+}
+
+/* Dropdown Carta */
+.navbar .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem; /* vertical y horizontal cómodos */
+}
+
+.navbar .dropdown-menu {
+    background-color: #a5231c;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Items del dropdown */
+.navbar .dropdown-item {
+    color: #ffffff;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+}
+
+/* Hover */
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Quitar fondo azul al click */
+.dropdown-item:active {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .carousel-item img {
