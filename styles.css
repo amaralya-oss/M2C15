@@ -21,7 +21,7 @@ body {
 }
 
 .navbar .nav-link {
-    color: #ffffff;
+    color: #d2d2d2;
     padding: 0.5rem 2rem; /* vertical 0.5rem, horizontal 2rem */
     display: flex;           /* convierte el enlace en un contenedor flex */
     align-items: center;     /* centra verticalmente el contenido */
