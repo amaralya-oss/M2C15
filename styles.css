@@ -124,22 +124,27 @@ body {
     transform: scale(1.05);
 }
 
-/* Iconos de la sección */
-
+/* Iconos */
 .RetiroDespacho .material-symbols-outlined {
-    color: #f09d98;     /* color inicial */
+    color: #ed7b75;
     font-size: 3rem;
-    transition: color 0.3s ease; /* suaviza el hover */
+    transition: color 0.3s ease;
 }
 
-/* Contenedor de tarjetas */
+.RetiroDespacho {
+    background-color: #A5231C;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+/* Contenedor */
 .RetiroDespacho .row {
     display: flex;
-    flex-wrap: wrap; /* permite que las tarjetas bajen en móviles */
-    gap: 2rem;       /* espacio entre tarjetas */
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-/* Tarjetas: estilo general */
+/* Tarjetas */
 .RetiroDespacho .row > .col-md-6 {
     display: flex;
     flex-direction: column;
@@ -148,31 +153,31 @@ body {
     text-align: center;
     padding: 3rem;
     border-radius: 0.5rem;
-    flex: 1 1 100%; /* por defecto ocupan todo el ancho en móviles */
-    transition: all 0.3s ease; /* transición para hover */
+    flex: 1 1 100%;
+    transition: all 0.3s ease;
 }
 
-/* Para pantallas grandes: tarjetas paralelas */
+/* Desktop */
 @media (min-width: 768px) {
     .RetiroDespacho .row > .col-md-6 {
-        flex: 1 1 calc(50% - 1rem); /* cada tarjeta ocupa la mitad con espacio */
+        flex: 1 1 calc(50% - 1rem);
     }
 }
 
-/* Tarjetas: efecto hover */
+/* Hover tarjeta */
 .RetiroDespacho .row > .col-md-6:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #c54039;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transform: translateY(-3px); /* efecto sutil de elevación */
+    transform: translateY(-3px);
 }
 
-/* Cambiar color del icono al pasar el cursor por la tarjeta */
+/* Hover icono al pasar por tarjeta */
 .RetiroDespacho .row > .col-md-6:hover .material-symbols-outlined {
-    color: #A5231C; /* el color que quieras */
-    transition: color 0.3s ease;
+    color: #ffffff;
 }
 
-.RetiroDespacho h5{
+/* Títulos */
+.RetiroDespacho h5 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 900;
