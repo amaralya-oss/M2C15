@@ -124,6 +124,7 @@ body {
     transform: scale(1.05);     /* Efecto ligero de “zoom” */
 }
 
+/* Estilo de las tarjetas de productos */
 .product-card {
     transition: transform 0.3s;
 }
@@ -132,7 +133,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Sección productos destacados */
+/* Productos favoritos */
 .product-card.favorito {
     border: 2px solid #A5231C;
     box-shadow: 0 0 10px rgba(255,87,51,0.5);
