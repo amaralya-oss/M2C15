@@ -3,6 +3,14 @@ body {
     background-color: #f8f9fa;
 }
 
+.btn-primary {
+    background-color: #df1f15;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #9c221c;
+}
+
 .top-bar {
     background-color: #f5c2c7; /* rosado pastel, ajusta a tu marca */
     color: #4a2c2a;            /* texto oscuro */
@@ -126,7 +134,7 @@ body {
 
 /* Sección productos destacados */
 .product-card.favorito {
-    border: 2px solid #FF5733;
+    border: 2px solid #A5231C;
     box-shadow: 0 0 10px rgba(255,87,51,0.5);
 }
 
@@ -156,7 +164,44 @@ body {
     object-fit: cover; /* recorta la imagen sin deformar */
 }
 
+/* Resalta la tarjeta favorita */
+.product-card.favorito {
+    border: 2px solid #FF5733;
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
+    position: relative;
+}
 
+/* Icono de corazón fijo en la esquina superior derecha */
+.product-card.favorito::after {
+    content: "💖";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animación fadeIn */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Mensaje temporal flotante */
+.toast-message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF5733;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    z-index: 10;
+}
 
 
 /* Iconos */
